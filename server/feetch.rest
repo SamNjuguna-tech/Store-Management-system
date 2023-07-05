@@ -1,0 +1,13 @@
+GET http://localhost:8000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODgxOTk3NDN9.IDGZsxEvNa742EiNyufo_Joka1f7-uFleicjTiQs26w
+
+###
+
+
+POST http://localhost:8000/addProduct
+Content-Type: : application/json
+
+{
+    "name":"Mio Perla",
+
+}
