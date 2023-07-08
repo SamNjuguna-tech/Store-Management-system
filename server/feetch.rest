@@ -1,13 +1,12 @@
 GET http://localhost:8000/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODgxOTk3NDN9.IDGZsxEvNa742EiNyufo_Joka1f7-uFleicjTiQs26w
+Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODgxOTk3NDN9.IDGZsxEvNa742EiNyufo_Joka1f7-uFleicjTiQs26w`
 
 ###
 
 
-POST http://localhost:8000/addProduct
-Content-Type: : application/json
+POST http://localhost:8000/login
 
 {
-    "name":"Mio Perla",
-
+	"username": "njuguna",
+    "password": "password1"
 }

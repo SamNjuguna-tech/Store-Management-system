@@ -7,6 +7,7 @@ function Auth(req, res, next){
 
     jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
         if (err) return response.sendStatus(403)
+        
         req.user = user
         next();
     })

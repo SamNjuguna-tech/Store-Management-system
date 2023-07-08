@@ -27,9 +27,9 @@ const userSchema = require('../database/models/usersModel')
 router.post("/", (req, res) => {
     const username = req.body.username
     const password = hashPassword(req.body.password)
+    const role = ""
 
-
-    const UserData = {username:username, password, password}
+    const UserData = {username:username, password:password, role:role}
 
     if (req.body) {
         let newUser = new userSchema(UserData)
