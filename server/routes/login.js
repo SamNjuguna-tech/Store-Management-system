@@ -18,9 +18,12 @@ return hashImputPassword === hashedPassword;
 const userSchema = require("../database/models/usersModel");
 
 router.post("/", (req, res) => {
-const UserName = req.body.username;
-const pswd = req.body.password
-let harshedPassword;
+    let reqBody = {...req.body}
+    const UserName = reqBody.userName;
+    const pswd = reqBody.password;
+
+
+    let harshedPassword;
 
 userSchema.findOne({username:UserName})
     .then((user) => {

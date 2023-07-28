@@ -30,8 +30,9 @@ router.post("/", (req, res) => {
     const role = ""
 
     const UserData = {username:username, password:password, role:role}
+    // res.json(UserData)
 
-    if (req.body) {
+    if (UserData) {
         let newUser = new userSchema(UserData)
 
         newUser.save()
